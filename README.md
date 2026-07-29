@@ -2,7 +2,7 @@
 
 **Modern, universal server management platform.**
 
-ServerPanel is a professional, open-source dashboard that brings a unified web interface to manage your infrastructure, inspired by industry standards like TrueNAS, Proxmox, and Cockpit. It sits on top of your existing Operating System—without taking it over—giving you clean, powerful administrative access.
+ServerPanel is a professional, open-source dashboard that brings a unified web interface to manage your infrastructure, inspired by other projects like TrueNAS and Cockpit. It sits on top of your existing Operating System—without taking it over—giving you clean, powerful administrative access.
 
 ## Features
 
@@ -18,13 +18,13 @@ ServerPanel is designed to be installed in seconds.
 
 ### Linux (Native)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/serverpanel/serverpanel/main/scripts/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/fitube1/serverpanel/main/scripts/install.sh | sudo bash
 ```
 
 ### Windows (Native)
 Run in an Administrative PowerShell:
 ```powershell
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/serverpanel/serverpanel/main/scripts/install.ps1 -OutFile install.ps1; .\install.ps1
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/fitube1/serverpanel/main/scripts/install.ps1 -OutFile install.ps1; .\install.ps1
 ```
 
 ### Docker
@@ -32,7 +32,7 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/serverpanel/serverpanel
 version: '3.8'
 services:
   serverpanel:
-    image: ghcr.io/serverpanel/serverpanel:latest
+    image: ghcr.io/fitube1/serverpanel:latest
     container_name: serverpanel
     restart: unless-stopped
     ports:
